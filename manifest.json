@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "snoop.id",
+    "description": "Web3 Domain Resolver",
+    "version": "0.1",
+    "permissions": ["scripting"],
+    "omnibox": { "keyword": "snoop" },
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "logo.png"
+    }
+}
