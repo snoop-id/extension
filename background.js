@@ -26,7 +26,7 @@ chrome.omnibox.onInputEntered.addListener(async (input, disposition) => {
         chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
             if (tabs.length > 0) {
                 chrome.tabs.update(tabs[0].id, {
-                    url: `https://snoop.id/search/${input}`,
+                    url: `https://snoop.id/search?q=${input}`,
                 });
             }
         });
